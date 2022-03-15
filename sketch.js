@@ -51,7 +51,7 @@ function setup() {
   // ground.x = ground.width /2;
   // ground.velocityX = -(6 + 3*score/100);
 
-  ground = createSprite(width/2,width,width,20);
+  ground = createSprite(width/2,height-10,width,2);
   ground.addImage("ground",groundImage);
   ground.x = ground.width /2;
   ground.velocityX = -(6 + 3*score/100);
@@ -68,7 +68,7 @@ function setup() {
   gameOver.visible = false;
   restart.visible = false;
   
-  invisibleGround = createSprite(width/2,height-10,width,125);
+  invisibleGround = createSprite(width/2,height-10,width,1);
   invisibleGround.visible = false;
   // invisibleGround.shapecolor = 'red';
 
